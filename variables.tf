@@ -10,6 +10,6 @@ variable "instance_type" {
 
 variable "instance_name" {
   description = "EC2 instance name"
-  default     = "Provisioned by Terraform-text5"
+  default     = "Provisioned by Terraform-text-new6"
 }
 
