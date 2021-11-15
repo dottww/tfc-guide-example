@@ -1,0 +1,51 @@
+id = "run-FM3VxLAytLT6kqYC"
+created_at = "2021-11-04T11:31:25.436Z"
+message = "test10 free weilintfc and weilin-team"
+commit_sha = "6f329d541fa6f7a2199418c83705eb9ad13f9078"
+speculative = false
+is_destroy = false
+refresh = true
+refresh_only = false
+replace_addrs = null
+target_addrs = null
+
+variables = {
+	"AWS_ACCESS_KEY_ID": {
+		"category":  "env",
+		"sensitive": false,
+	},
+	"AWS_SECRET_ACCESS_KEY": {
+		"category":  "env",
+		"sensitive": true,
+	},
+	"AWS_SESSION_TOKEN": {
+		"category":  "env",
+		"sensitive": true,
+	},
+}
+
+organization = {
+	"name": "weilin-team",
+}
+
+workspace = {
+	"auto_apply":  true,
+	"created_at":  "2021-11-04T08:54:21.000Z",
+	"description": "doormat aws --account se_demos1_test --tf-push --tf-organization weilin-team --tf-workspace tfc-guide-example",
+	"id":          "ws-kQca1jhXKUt4vTGk",
+	"name":        "tfc-guide-example",
+	"tags":        [],
+	"vcs_repo": {
+		"branch":             "",
+		"display_identifier": "dottww/tfc-guide-example",
+		"identifier":         "dottww/tfc-guide-example",
+		"ingress_submodules": false,
+	},
+	"working_directory": "",
+}
+
+cost_estimate = {
+	"delta_monthly_cost":    "0.0",
+	"prior_monthly_cost":    "9.1519999999999992",
+	"proposed_monthly_cost": "9.1519999999999992",
+}

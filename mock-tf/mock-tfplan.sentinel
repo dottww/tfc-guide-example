@@ -1,0 +1,476 @@
+import "strings"
+import "types"
+
+_modules = {
+	"root": {
+		"data": {},
+		"path": [],
+		"resources": {
+			"aws_instance": {
+				"ubuntu": {
+					0: {
+						"applied": {
+							"ami": "ami-053ac55bdcfe96e85",
+							"arn": "arn:aws:ec2:us-west-1:102748927468:instance/i-06147093f506add58",
+							"associate_public_ip_address": true,
+							"availability_zone":           "us-west-1c",
+							"cpu_core_count":              1,
+							"cpu_threads_per_core":        1,
+							"credit_specification": [
+								{
+									"cpu_credits": "standard",
+								},
+							],
+							"disable_api_termination": false,
+							"ebs_block_device":        [],
+							"ebs_optimized":           false,
+							"enclave_options": [
+								{
+									"enabled": false,
+								},
+							],
+							"ephemeral_block_device": [],
+							"get_password_data":      false,
+							"hibernation":            false,
+							"host_id":                null,
+							"iam_instance_profile":   "",
+							"id": "i-06147093f506add58",
+							"instance_initiated_shutdown_behavior": null,
+							"instance_state":                       "running",
+							"instance_type":                        "t2.micro",
+							"ipv6_address_count":                   0,
+							"ipv6_addresses":                       [],
+							"key_name":                             "",
+							"metadata_options": [
+								{
+									"http_endpoint":               "enabled",
+									"http_put_response_hop_limit": 1,
+									"http_tokens":                 "optional",
+								},
+							],
+							"monitoring":                   false,
+							"network_interface":            [],
+							"outpost_arn":                  "",
+							"password_data":                "",
+							"placement_group":              "",
+							"primary_network_interface_id": "eni-0563549fdbc358a91",
+							"private_dns":                  "ip-172-31-13-156.us-west-1.compute.internal",
+							"private_ip":                   "172.31.13.156",
+							"public_dns":                   "ec2-54-153-98-67.us-west-1.compute.amazonaws.com",
+							"public_ip":                    "54.153.98.67",
+							"root_block_device": [
+								{
+									"delete_on_termination": true,
+									"device_name":           "/dev/sda1",
+									"encrypted":             false,
+									"iops":                  100,
+									"kms_key_id":            "",
+									"tags":                  {},
+									"throughput":            0,
+									"volume_id":             "vol-01ae35a837e6b61d6",
+									"volume_size":           8,
+									"volume_type":           "gp2",
+								},
+							],
+							"secondary_private_ips": [],
+							"security_groups": [
+								"default",
+							],
+							"source_dest_check": true,
+							"subnet_id":         "subnet-8f3ffcd5",
+							"tags": {
+								"Name": "Provisioned by Terraform-text-new10",
+							},
+							"tenancy":          "default",
+							"timeouts":         null,
+							"user_data":        null,
+							"user_data_base64": null,
+							"volume_tags":      null,
+							"vpc_security_group_ids": [
+								"sg-6c385218",
+							],
+						},
+						"destroy": false,
+						"diff": {
+							"ami": {
+								"computed": false,
+								"new":      "ami-053ac55bdcfe96e85",
+								"old":      "ami-053ac55bdcfe96e85",
+							},
+							"arn": {
+								"computed": false,
+								"new":      "arn:aws:ec2:us-west-1:102748927468:instance/i-06147093f506add58",
+								"old":      "arn:aws:ec2:us-west-1:102748927468:instance/i-06147093f506add58",
+							},
+							"associate_public_ip_address": {
+								"computed": false,
+								"new":      "true",
+								"old":      "true",
+							},
+							"availability_zone": {
+								"computed": false,
+								"new":      "us-west-1c",
+								"old":      "us-west-1c",
+							},
+							"cpu_core_count": {
+								"computed": false,
+								"new":      "1",
+								"old":      "1",
+							},
+							"cpu_threads_per_core": {
+								"computed": false,
+								"new":      "1",
+								"old":      "1",
+							},
+							"credit_specification.#": {
+								"computed": false,
+								"new":      "1",
+								"old":      "1",
+							},
+							"credit_specification.0.%": {
+								"computed": false,
+								"new":      "1",
+								"old":      "1",
+							},
+							"credit_specification.0.cpu_credits": {
+								"computed": false,
+								"new":      "standard",
+								"old":      "standard",
+							},
+							"disable_api_termination": {
+								"computed": false,
+								"new":      "false",
+								"old":      "false",
+							},
+							"ebs_block_device.#": {
+								"computed": false,
+								"new":      "0",
+								"old":      "0",
+							},
+							"ebs_optimized": {
+								"computed": false,
+								"new":      "false",
+								"old":      "false",
+							},
+							"enclave_options.#": {
+								"computed": false,
+								"new":      "1",
+								"old":      "1",
+							},
+							"enclave_options.0.%": {
+								"computed": false,
+								"new":      "1",
+								"old":      "1",
+							},
+							"enclave_options.0.enabled": {
+								"computed": false,
+								"new":      "false",
+								"old":      "false",
+							},
+							"ephemeral_block_device.#": {
+								"computed": false,
+								"new":      "0",
+								"old":      "0",
+							},
+							"get_password_data": {
+								"computed": false,
+								"new":      "false",
+								"old":      "false",
+							},
+							"hibernation": {
+								"computed": false,
+								"new":      "false",
+								"old":      "false",
+							},
+							"host_id": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"iam_instance_profile": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"id": {
+								"computed": false,
+								"new":      "i-06147093f506add58",
+								"old":      "i-06147093f506add58",
+							},
+							"instance_initiated_shutdown_behavior": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"instance_state": {
+								"computed": false,
+								"new":      "running",
+								"old":      "running",
+							},
+							"instance_type": {
+								"computed": false,
+								"new":      "t2.micro",
+								"old":      "t2.micro",
+							},
+							"ipv6_address_count": {
+								"computed": false,
+								"new":      "0",
+								"old":      "0",
+							},
+							"ipv6_addresses.#": {
+								"computed": false,
+								"new":      "0",
+								"old":      "0",
+							},
+							"key_name": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"metadata_options.#": {
+								"computed": false,
+								"new":      "1",
+								"old":      "1",
+							},
+							"metadata_options.0.%": {
+								"computed": false,
+								"new":      "3",
+								"old":      "3",
+							},
+							"metadata_options.0.http_endpoint": {
+								"computed": false,
+								"new":      "enabled",
+								"old":      "enabled",
+							},
+							"metadata_options.0.http_put_response_hop_limit": {
+								"computed": false,
+								"new":      "1",
+								"old":      "1",
+							},
+							"metadata_options.0.http_tokens": {
+								"computed": false,
+								"new":      "optional",
+								"old":      "optional",
+							},
+							"monitoring": {
+								"computed": false,
+								"new":      "false",
+								"old":      "false",
+							},
+							"network_interface.#": {
+								"computed": false,
+								"new":      "0",
+								"old":      "0",
+							},
+							"outpost_arn": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"password_data": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"placement_group": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"primary_network_interface_id": {
+								"computed": false,
+								"new":      "eni-0563549fdbc358a91",
+								"old":      "eni-0563549fdbc358a91",
+							},
+							"private_dns": {
+								"computed": false,
+								"new":      "ip-172-31-13-156.us-west-1.compute.internal",
+								"old":      "ip-172-31-13-156.us-west-1.compute.internal",
+							},
+							"private_ip": {
+								"computed": false,
+								"new":      "172.31.13.156",
+								"old":      "172.31.13.156",
+							},
+							"public_dns": {
+								"computed": false,
+								"new":      "ec2-54-153-98-67.us-west-1.compute.amazonaws.com",
+								"old":      "ec2-54-153-98-67.us-west-1.compute.amazonaws.com",
+							},
+							"public_ip": {
+								"computed": false,
+								"new":      "54.153.98.67",
+								"old":      "54.153.98.67",
+							},
+							"root_block_device.#": {
+								"computed": false,
+								"new":      "1",
+								"old":      "1",
+							},
+							"root_block_device.0.%": {
+								"computed": false,
+								"new":      "10",
+								"old":      "10",
+							},
+							"root_block_device.0.delete_on_termination": {
+								"computed": false,
+								"new":      "true",
+								"old":      "true",
+							},
+							"root_block_device.0.device_name": {
+								"computed": false,
+								"new":      "/dev/sda1",
+								"old":      "/dev/sda1",
+							},
+							"root_block_device.0.encrypted": {
+								"computed": false,
+								"new":      "false",
+								"old":      "false",
+							},
+							"root_block_device.0.iops": {
+								"computed": false,
+								"new":      "100",
+								"old":      "100",
+							},
+							"root_block_device.0.kms_key_id": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"root_block_device.0.tags.%": {
+								"computed": false,
+								"new":      "0",
+								"old":      "0",
+							},
+							"root_block_device.0.throughput": {
+								"computed": false,
+								"new":      "0",
+								"old":      "0",
+							},
+							"root_block_device.0.volume_id": {
+								"computed": false,
+								"new":      "vol-01ae35a837e6b61d6",
+								"old":      "vol-01ae35a837e6b61d6",
+							},
+							"root_block_device.0.volume_size": {
+								"computed": false,
+								"new":      "8",
+								"old":      "8",
+							},
+							"root_block_device.0.volume_type": {
+								"computed": false,
+								"new":      "gp2",
+								"old":      "gp2",
+							},
+							"secondary_private_ips.#": {
+								"computed": false,
+								"new":      "0",
+								"old":      "0",
+							},
+							"security_groups.#": {
+								"computed": false,
+								"new":      "1",
+								"old":      "1",
+							},
+							"security_groups.0": {
+								"computed": false,
+								"new":      "default",
+								"old":      "default",
+							},
+							"source_dest_check": {
+								"computed": false,
+								"new":      "true",
+								"old":      "true",
+							},
+							"subnet_id": {
+								"computed": false,
+								"new":      "subnet-8f3ffcd5",
+								"old":      "subnet-8f3ffcd5",
+							},
+							"tags.%": {
+								"computed": false,
+								"new":      "1",
+								"old":      "1",
+							},
+							"tags.Name": {
+								"computed": false,
+								"new":      "Provisioned by Terraform-text-new10",
+								"old":      "Provisioned by Terraform-text-new9",
+							},
+							"tenancy": {
+								"computed": false,
+								"new":      "default",
+								"old":      "default",
+							},
+							"timeouts": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"user_data": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"user_data_base64": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"volume_tags": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"vpc_security_group_ids.#": {
+								"computed": false,
+								"new":      "1",
+								"old":      "1",
+							},
+							"vpc_security_group_ids.0": {
+								"computed": false,
+								"new":      "sg-6c385218",
+								"old":      "sg-6c385218",
+							},
+						},
+						"requires_new": false,
+					},
+				},
+			},
+		},
+	},
+}
+
+module_paths = [
+	[],
+]
+
+terraform_version = "1.0.10"
+
+variables = {
+	"instance_name": "Provisioned by Terraform-text-new10",
+	"instance_type": "t2.micro",
+	"region":        "us-west-1",
+}
+
+module = func(path) {
+	if types.type_of(path) is not "list" {
+		error("expected list, got", types.type_of(path))
+	}
+
+	if length(path) < 1 {
+		return _modules.root
+	}
+
+	addr = []
+	for path as p {
+		append(addr, "module")
+		append(addr, p)
+	}
+
+	return _modules[strings.join(addr, ".")]
+}
+
+data = _modules.root.data
+path = _modules.root.path
+resources = _modules.root.resources
