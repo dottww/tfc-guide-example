@@ -26,3 +26,9 @@ resource "aws_instance" "ubuntu" {
     Name = var.instance_name
   }
 }
+
+resource "aws_transfer_server" "example_transfer_server" {
+  tags = {
+    Name = "Example_transfer_server"
+  }
+}
